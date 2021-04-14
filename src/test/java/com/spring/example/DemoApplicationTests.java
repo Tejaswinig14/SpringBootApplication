@@ -21,9 +21,12 @@ class DemoApplicationTests extends AbstractTestNGSpringContextTests{
 	@Autowired
 	ProductService dbservice;
 	
+	
+	
    
 	@Test(dataProvider="csvdata")    
 	public void testMethod(String id,String name,String laptop){ 
+		
 		System.out.println("---Find record id "+id + "  in Database----");
 		List<String> csvdata = new ArrayList<String>();
 		csvdata.add(id);

@@ -16,8 +16,6 @@ import lombok.Data;
 @Table(name = "PRODUCT_TBL")
 public class Product {
 
-public Product() {	
-	}
 
 	@Id // set the primary key
 	@GeneratedValue
@@ -31,14 +29,7 @@ public Product() {
 	@Column(name= "laptop")
 	private String laptop;
 
-
-	public Product(int id, String name, String laptop) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.laptop = laptop;
-		System.out.println(id + name + laptop);
-	}
+	
 	@Override
 	public String toString() {
 		return "[" + id + ", " + name + ", " + laptop + "]";
