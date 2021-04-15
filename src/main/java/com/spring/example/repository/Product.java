@@ -16,7 +16,9 @@ import lombok.Data;
 @Table(name = "PRODUCT_TBL")
 public class Product {
 
-
+public Product() {
+	// TODO Auto-generated constructor stub
+}
 	@Id // set the primary key
 	@GeneratedValue
 	@Column(name = "id")
